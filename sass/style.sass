@@ -1,0 +1,170 @@
+@import lib/base
+@import normalize
+
+
+$font-weight: 400
+$font-size: 16px
+$line-height: 1.4
+$font-family: Arial 
+$color: #000
+$wrapper: 1200px
+
+
+body 	
+	color: $color
+	font: $font-weight $font-size/$line-height $font-family, Arial, sans-serif
+	background: #FFF
+
+/* 3. MAIN STYLES
+/* ================================================ */
+
+.main-wrapper
+	padding: 0
+	min-width: 320px
+	position: relative 
+	overflow: hidden
+	opacity: 1
+	min-height: 100% 
+
+.wrapper
+	min-width: 320px
+	max-width: $wrapper
+	padding: 0 40px 0 40px
+	margin: 0 auto
+	position: relative
+
+
+img
+	display: block
+	max-width: 100%
+
+span 
+	display: inline-block
+
+/* text position */
+
+.text-left
+	text-align: left !important
+
+.text-center
+	text-align: center !important
+
+.text-right
+	text-align: right !important
+
+
+/* 3.1. Icons
+     ====================== */
+.ic 
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	// background: $icons no-repeat
+
+// @each $i in next, prev
+// 	.ic--#{$i}
+// 		+s(ic--#{$i})
+
+/* 3.2. Buttons
+     ====================== */
+.btn, a.btn
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	height: 40px
+	padding: 11px 18px 0
+	color: #444
+	font: normal 14px/18px Arial, sans-serif
+	text-align: center
+	text-decoration: none
+	border: none
+	background-color: #eee
+	border-radius: 5px
+	cursor: pointer
+	transition: all 0.2s linear
+	&:hover
+		background-color: #fff
+		text-decoration: none
+		color: #000
+
+input.btn,
+button.btn 
+	padding-top: 0 !important
+	padding-bottom: 1px
+
+
+/* 3.3. forms
+     ====================== */	
+	
+.form 
+	&-field
+		margin-bottom: 15px
+
+	&-control 
+		display: block
+		width: 100%
+		height: 40px
+		padding: 0 20px
+		color: #444
+		font: normal 14px/18px Arial, sans-serif
+		border: 1px solid #aaa
+		background: #fff
+		border-radius: 5px
+		+placeholder
+			color: #aaa
+		+placeholder-color(#aaa)
+
+input[type="search"]
+	-webkit-appearance: none
+
+::-ms-clear
+	width: 0
+	height: 0
+
+textarea.form-control 
+	height: auto
+	min-height: 100px
+	padding-top: 10px
+	resize: none
+	
+label 
+	display: block
+	font-weight: 600
+	font-size: 14px
+	margin-bottom: 5px
+
+/* 4. HEADER
+/* ================================================ */
+header
+	width: 100%
+	min-width: 320px
+	text-align: left
+	position: absolute
+	left: 0px
+	top: 0px
+	z-index: 99 
+
+	
+
+/* 5. CONTENT
+/* ================================================ */
+.content
+	width: 100%
+	min-width: 320px
+	text-align: left
+
+
+/* 6. FOOTER
+/* ================================================ */
+footer
+	position: absolute
+	left: 0px
+	bottom: 0px
+	z-index: 1
+	width: 100%
+	min-width: 320px
+	
+
+/* 7. MEDIA
+/* ================================================ */
+
